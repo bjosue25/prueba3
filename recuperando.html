@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/34cf304f66.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="header-content">
+        <div class="logo">
+            <h1>Almacén <b>Veicor</b></h1>
+        </div>
+
+        <div class="menu">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="a">¿Quienes Somos?</a></li>
+                    <li><a href="login.html">Ingresar</a></li>
+                    <li><a href="a">Contactos</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
+</header>
+    <div class="contenedor-form">
+        <div class="toggle">
+            <span> Crear Cuenta</span>
+        </div>
+        
+        <div class="formulario">
+            <h2>Recuperar Contraseña</h2>
+            <form  action="login.html"  method="post" class="form-registrer" onsubmit="return recuperar();">
+                <input type="text" placeholder="Ingrese el codigo enviado a su correo Electronico" id="codigo" required>
+                <input type="submit" value="Recuperar">
+            </form>
+        </div>
+        <div class="formulario">
+            
+            <form action="../registrado/inicio/home.html"  method="post" class="form-registrer" onsubmit="return formulario();">
+                <input type="text" placeholder="Usuario" id="user" required>
+                
+                <input type="password" placeholder="Contraseña" id="pass" minlength="8" required>
+
+                <input type="password" placeholder="Confirmar Contraseña" id="c-pass" required>
+                
+                <input type="email" placeholder="Correo Electronico" id="email" required>
+                
+                <input type="text" placeholder="Teléfono" id="telf"  maxlength="10" minlength="9" required>
+                
+                <input type="submit" value="Registrarse">
+
+                
+            </form>
+        </div>     
+         
+        <div class="reset-password">
+            <a id="recuperar" href="login.html">Regresar</a>
+        </div>
+    </div>
+    <script src="formulario.js"></script>
+    <script src="js/jquery-3.1.1.min.js"></script>    
+    <script src="js/main.js"></script>
+</body>
+</html>
